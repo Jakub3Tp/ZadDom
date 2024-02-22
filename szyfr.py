@@ -1,8 +1,8 @@
 def szyfr_cezara(text, przesun):
     zaszyfrowany_tekst = ""
     for literka in tekst:
-        if literka.isalpha():  # Sprawdzamy, czy znak jest literą
-            if literka.islower():  # Sprawdzamy, czy litera jest mała
+        if literka.isalpha():
+            if literka.islower():
                 zaszyfrowana_litera = chr(((ord(literka) - 97 + przesun) % 26) + 97)
             else:  # Jeśli litera jest wielka
                 zaszyfrowana_litera = chr(((ord(literka) - 65 + przesun) % 26) + 65)
@@ -19,8 +19,6 @@ def przesun_o():
                 return przesun
             else:
                 print("Przesunięcie musi być liczbą całkowitą od 1 do 25.")
-        except ValueError:
-            print("Podana wartość nie jest liczbą całkowitą.")
 
 def main():
     tekst = input("Podaj tekst do zaszyfrowania: ")
