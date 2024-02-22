@@ -1,5 +1,5 @@
 def szyfr_cezara(text, przesun):
-    encrypted_tekst = ""
+    zaszyfrowany_tekst = ""
     for literka in tekst:
         if literka.isalpha():  # Sprawdzamy, czy znak jest literą
             if literka.islower():  # Sprawdzamy, czy litera jest mała
